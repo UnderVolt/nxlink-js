@@ -1,0 +1,24 @@
+{
+  "name": "nxlink",
+  "version": "0.1",
+  "description": "",
+  "main": "src/main.js",
+  "author": "@Lywx",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node bin/src/main.js",
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec \"npm run build && npm run start\" --watch src --ext ts"
+  },
+  "dependencies": {
+    "domain": "^0.0.1",
+    "dotenv": "^16.0.1",
+    "module-alias": "^2.2.2",
+    "net": "^1.0.2",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.6"
+  }
+}
